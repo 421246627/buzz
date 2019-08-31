@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>地点收藏-我的收藏 - 嗡嗡嗡</title>
+    <base href="http://localhost/">
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/logoHead.ico">
+    <link href="css/css+base_css+jquery.suggest_css+plugins_css+plugins+jquery.jgrowl_css+other+popup_css+app+topbar_v2^alw^1527308432.css" rel="stylesheet" type="text/css"/>
+    <link href="css/css+base_css+plan+favorite_css+plugins_css+home_new2015+home_tags_css+home_new2015+avatar_css+home_new2015+ico_css+home_new2015+home_extra_css+home_new2015+home_fav_place^YlJT^1527308432.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="topBar">
+    <div class="topBarC">
+        <div class="logo"><a style="background: url('images/logoTop.png') no-repeat 0 0;display: block;width:40px;height: 39px;position: relative;" title="嗡嗡嗡" href="front_desk/homePage.html"></a></div>
+        <div class="t_nav">
+            <ul id="pnl_nav" data-cs-t="headnav_wo">
+                <li data-cs-p="index">
+                    <strong class="t"><a href="front_desk/homePage.html">首页</a></strong>
+                </li>
+                <li data-cs-t="wenda" data-cs-p="wenda">
+                    <strong class="t"><a href="destinationController/queryAllDestination" title="目的地">目的地</a></strong>
+                </li>
+                <li data-cs-t="things" data-cs-p="things">
+                    <strong class="t"><a href="front_desk/askRespond/askRespond.html" title="旅游问答">旅游问答</a></strong>
+                </li>
+                <li data-cs-p="together">
+                    <strong class="t"><a href="/hotelController/hotel2Index" title="酒店">酒店</a></strong>
+                </li>
+                <li data-cs-p="group">
+                    <strong class="t"><a href="/mapController/MarkerClustererMapIndex" title="地图">地图</a></strong>
+                </li>
+            </ul>
+        </div>
+        <div class="t_info">
+            <div class="pagelet-block" id="login_box">
+                <div class="no_login">
+                    <span><a href="usersController/show_login_html">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="usersController/show_login_html">注册</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="banner">
+
+        <style>
+            .invisible {opacity:0.01; filter: alpha(opacity=1);}
+            .invisible .maps-container {opacity:0.01; filter: alpha(opacity=1);}
+        </style>
+
+        <div class="banner_img banner_extra" id="_j_banner">
+        </div>
+        <div class="tags_bar second_tags_bar">
+            <div class="center clearfix">
+                <div class="MAvatar clearfix">
+                    <div class="MAvaImg flt1">
+                        <img width="120" height="120" src="images/wKgED1uqIpCARLIhAAAZUeRPlFM676.png">
+                    </div>
+                    <div class="MAvaEasyWord flt1">
+                        <span class="MAvaName"></span>
+                    </div>
+                </div>
+                <ul class="flt2" id="titleBar">
+                    <li><a class="tags_link" title="我的窝">我的窝</a></li>
+                    <li><a class="tags_link">我的游记</a></li>
+                    <li><a class="tags_link" title="游记收藏">游记收藏</a></li>
+                    <li><a class="tags_link" title="我的问答">我的问答</a></li>
+                    <li><a class="tags_link" title="写游记">写游记</a></li>
+                    <li><a class="tags_link" title="问达人">问达人</a></li>
+                    <li class="more "><span class="tags_link" role="button" title="更多" style="cursor:default">更多<i class="MDownMore"></i></span><div class="tags_more_list"><ul><li><a title="我的收藏"><i class="ico_collect"></i><span>我的收藏</span></a></li><li><a title="我的订单"><i class="ico_order"></i><span>我的订单</span></a></li></ul></div></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="home-extra">
+        <div class='s-menu'>
+            <ul class='clearfix'>
+                <li class='on'><a>我的收藏<i></i></a></li>
+                <li><a href='front_desk/users/my_orderForm.html'>我的订单<i></i></a></li>
+            </ul>
+        </div>
+        <div class='s_title'>
+            <ul>
+                <li class='s_curr'>
+                    <a href='front_desk/users/my_collect_scenicSpotCollect.html'>景点收藏</a>
+                </li>
+                <li><a href='front_desk/users/my_collect_hotel.html'>酒店收藏</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<link href="css/mfw-footer.css" rel="stylesheet" type="text/css"/>
+<div id="footer">
+    <div class="ft-content" style="width: 1105px">
+        <div class="ft-copyright">
+            <a href="front_desk/homePage.html"><i style="background:url('images/logoBottom.png') no-repeat 0 0px;float:left;width: 136px;height: 39px;overflow: hidden;margin: 8px 20px 0 0;"></i></a>
+            <p>© 2018 Mafengwo.cn <a href="http://www.miibeian.gov.cn/" target="_blank" rel="nofollow">京ICP备11015476号</a> <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502013401" target="_blank"><img src="http://images.mafengwo.net/images/footer/police_record.png" width="12" style="margin:0 2px 4px 0;">京公网安备11010502013401号</a> <a href="http://images.mafengwo.net/images/about/icp2.jpg" target="_blank" rel="nofollow">京ICP证110318号</a><span class="m_l_10">违法和不良信息举报电话: 010-59222790 举报邮箱 mfwyouji@mafengwo.com</span></p>
+            <p>网络出版服务许可证：(总)网出证(京)字第161号<span class="m_l_10">增值电信业务经营许可证：京B2-20180228</span> <a href="http://images.mafengwo.net/images/about/licence_3.jpg" target="_blank" rel="nofollow" class="m_l_10">营业执照</a><a href="/sales/uhelp/doc" target="_blank" rel="nofollow" class="m_l_10">帮助中心</a><span class="m_l_10">嗡嗡嗡客服：国内</span><span class="highlight">4006-345-678</span><span class="m_l_10">海外</span> <span class="highlight">+86-10-5922-2799</span></p>
+        </div>
+        <div class="ft-safety">
+            <a class="s-a" target="_blank" href="https://search.szfw.org/cert/l/CX20140627008255008321" id="___szfw_logo___"></a>
+            <a class="s-b" href="https://ss.knet.cn/verifyseal.dll?sn=e130816110100420286o93000000&ct=df&a=1&pa=787189" target="_blank" rel="nofollow"></a>
+            <a class="s-c" href="http://www.itrust.org.cn/Home/Index/itrust_certifi/wm/1669928206.html" target="_blank" rel="nofollow"></a>
+        </div>
+    </div>
+</div>
+<script>
+    $().ready(
+        function()
+        {
+            $.ajax({
+                url:"usersController/getCurrentLoginUser",
+                dataType:"json",
+                type:"post",
+                success:function(data)
+                {
+                    if(null!=data)
+                    {
+                        var login_boxHtml="";
+                        if(data.loginState)
+                        {
+                            login_boxHtml="<ul class='user_info'><li id='pnl_user_msg' data-hoverclass='on' class='msg _j_hoverclass'><span id='oldmsg' class='oldmsg'><a href='javascript:' class='infoItem'>消息<b></b></a></span><ul id='head-msg-box' class='drop-bd'><li><a href='front_desk/message/my_replyAskRespondCommentMessage.html' target='_blank' rel='nofollow'>回答评论</a></li><li><a href='front_desk/message/my_replyAskRespondMessage.html' target='_blank' rel='nofollow'>问答消息</a></li><li><a href='front_desk/message/my_travelNotesReplyMessage.html' target='_blank' rel='nofollow'>游记评论</a></li></ul></li><li class='account _j_hoverclass' data-hoverclass='on' id='pnl_user_set'><span class='t'><a class='infoItem' href='front_desk/users/personalSpace.html?userId="+data.currentUser.userId+"'><img src='"+data.currentUser.photo+"' width='32' height='32' align='absmiddle'><b></b></a></span><div class='uSet c'><div class='asset'><a class='coin' href='front_desk/users/personalSpace.html?userId="+data.currentUser.userId+"' target='_blank'>"+data.currentUser.userName+"</a></div><a href='front_desk/users/personalSpace.html?userId="+data.currentUser.userId+"' target='_blank' title='我的马蜂窝' >我的马蜂窝</a><a href='front_desk/travelNotes/createNoteIndex.html' target='_blank' class='drop-write' title='写游记'>写游记</a><a href='front_desk/users/my_collect_scenicSpotCollect.html' title='我的收藏' target='_blank' rel='nofollow'>我的收藏</a><a href='front_desk/users/my_replyAskRespond.html?userId="+data.currentUser.userId+"' target='_blank' title='我的问答' rel='nofollow'>我的问答</a><a href='front_desk/users/travelNotes.html?userId="+data.currentUser.userId+"' target='_blank' class='drop-write' title='我的游记' rel='nofollow'>我的游记</a><a href='front_desk/users/my_travelCollection.html?userId="+data.currentUser.userId+"' target='_blank' title='游记收藏' rel='nofollow'>游记收藏</a><a href='front_desk/users/my_orderForm.html' title='我的订单' target='_blank' rel='nofollow'>我的订单</a><a href='front_desk/users/my_users.html' title='我的设置' target='_blank' rel='nofollow'>设置</a><a onclick='logout()' title='退出登录' rel='nofollow'>退出</a></div></li></ul>";
+                        }
+                        else
+                        {
+                            var url=window.location.href;
+                            login_boxHtml="<div class='no_login'><span><a href='usersController/show_login_html?url="+url+"'>登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='usersController/show_login_html?url="+url+"'>注册</a></span></div>";
+                        }
+                        $("#login_box").html(login_boxHtml);
+                        //判断悬浮不是用户头像或者不是用户下拉列表隐藏
+                        $(document).mouseover(
+                            function(e)
+                            {
+                                if(0<$(e.target).closest("#pnl_user_msg").length||0<$(e.target).closest("#head-msg-box").length)
+                                    $("#pnl_user_msg").addClass("on");
+                                else
+                                    $("#pnl_user_msg").removeClass("on");
+                                if(0<$(e.target).closest("#pnl_user_set").length||0<$(e.target).closest(".uSet").length)
+                                    $("#pnl_user_set").addClass("on");
+                                else
+                                    $("#pnl_user_set").removeClass("on");
+                            }
+                        );
+                    }
+                }
+            });
+            find_scenicSpotCollectByuserIds();
+        }
+    );
+    function find_scenicSpotCollectByuserIds()
+    {
+        $.ajax({
+            url:"scenicspotCollectController/find_scenicSpotCollectByuserIds",
+            dataType:"json",
+            type:"post",
+            success:function(data)
+            {
+                if(null!=data)
+                {
+                    $(".MAvaImg img").attr("src",data.user.photo);
+                    $(".MAvaName").text(data.user.userName);
+                    var titleBarHtml="";
+                    var userId=data.user.userId;
+                    titleBarHtml+="<li><a class='tags_link' href='front_desk/users/personalSpace.html?userId="+userId+"' title='我的窝'>我的窝</a></li>";
+                    titleBarHtml+="<li><a class='tags_link' href='front_desk/users/travelNotes.html?userId=" + userId + "'>我的游记</a></li>";
+                    titleBarHtml += "<li><a class='tags_link' href='front_desk/users/my_travelCollection.html?userId="+userId+"' title='游记收藏'>游记收藏</a></li>";
+                    titleBarHtml+="<li><a class='tags_link' href='front_desk/users/my_replyAskRespond.html?userId="+userId+"' title='我的问答'>我的问答</a></li>";
+                    titleBarHtml+="<li><a class='tags_link' href='front_desk/travelNotes/createNoteIndex.html' title='写游记'>写游记</a></li>";
+                    titleBarHtml+="<li><a class='tags_link' href='front_desk/askRespond/askRespond.html' title='问达人'>问达人</a></li>";
+                    titleBarHtml+="<li class='more '><span class='tags_link' role='button' title='更多' style='cursor:default'>更多<i class='MDownMore'></i></span><div class='tags_more_list'><ul><li><a href='front_desk/users/my_collect_scenicSpotCollect.html' title='我的收藏'><i class='ico_collect'></i><span>我的收藏</span></a></li><li><a href='front_desk/users/my_orderForm.html' title='我的订单'><i class='ico_order'></i><span>我的订单</span></a></li></ul></div></li>";
+                    $("#titleBar").html(titleBarHtml);
+                    var p_countrysHtml="<div class='s-menu'><ul class='clearfix'><li class='on'><a>我的收藏<i></i></a></li><li><a href='front_desk/users/my_orderForm.html'>我的订单<i></i></a></li></ul></div><div class='s_title'><ul><li  class='s_curr'><a href='front_desk/users/my_collect_scenicSpotCollect.html'>景点收藏</a></li><li><a href='front_desk/users/my_collect_hotel.html'>酒店收藏</a></li></ul></div>";
+                    if(null!=data.scenicSpots&&0<data.scenicSpots.length)
+                    {
+                        for(var i=0;i<data.scenicSpots.length;i++)
+                        {
+                            var photo=data.scenicSpots[i].photo.split(",");
+                            var synopsis=data.scenicSpots[i].synopsis;
+                            if(null!=synopsis&&synopsis.length>70)
+                                synopsis=synopsis.substring(0,70)+"...";
+
+                            var p_item_poiHtml="";
+                            if(null!=photo&&0<photo.length)
+                            {
+                                p_item_poiHtml+="<div class='p-nav clearfix' style='margin-top:20px;'><a class='on'><i class='p-icon-hotel'></i>图片</a></div><ul class='p-poi clearfix'>";
+                                for(var s=0;s<photo.length;s++)
+                                {
+                                    p_item_poiHtml+="<li><a href='scenicspotController/byScenicSpotIdQueryScenicSpot?scenicSpotId="+data.scenicSpots[i].scenicSpotId+"' target='_blank'><div class='img' style='height: 160px;'><img src='"+photo[s]+"' width='162' height='162'></div></a></li>";
+                                }
+                                p_item_poiHtml+="</ul></div>";
+                            }
+                            else
+                                photo=["images/home_new2015/default.jpg"];
+                            p_countrysHtml+="<div class='p-country'><div class='p-hd'>"+data.scenicSpots[i].city.cityName+"</div><div class='p-item'><div class='p-item-main clearfix'><div class='p-toggle'><a class='btn-toggle' onclick='conceal_photo(this)'><span>收起</span><i class='arr-up'></i></a></div><div class='p-content'><div class='img'><a href='scenicspotController/byScenicSpotIdQueryScenicSpot?scenicSpotId="+data.scenicSpots[i].scenicSpotId+"' target='_blank'><img src='"+photo[i]+"' width='140' height='90'></a></div><div class='p-title'><a href='scenicspotController/byScenicSpotIdQueryScenicSpot?scenicSpotId="+data.scenicSpots[i].scenicSpotId+"' target='_blank'><strong>"+data.scenicSpots[i].chineseName+"</strong></a><span class='en'>"+data.scenicSpots[i].englishName+"</span><span class='s-pull'><a data-scenicSpotCollectId='"+data.scenicSpots[i].scenicSpotCollectId+"' onclick='cancel_scenicSpotCollect(this)'>取消收藏</a></span></div><p class='favtip'></p><p class='summary'>"+synopsis+"</p></div></div>"+p_item_poiHtml+"</div></div>";
+                        }
+                    }
+                    $(".home-extra").html(p_countrysHtml);
+                }
+            }
+        });
+    }
+    //由于ajax请求时,拦截器拦截到未登录时无法登录,所以ajaxSetup方法就是在所有ajax请求结束后执行跳转页面
+    $.ajaxSetup({
+        //设置ajax请求结束后的执行动作
+        complete :
+            function(XMLHttpRequest, textStatus) {
+                // 通过XMLHttpRequest取得响应头，sessionstatus
+                var sessionstatus = XMLHttpRequest.getResponseHeader("sessionstatus");
+                if (sessionstatus == "TIMEOUT") {
+                    var win = window;
+                    while (win != win.top){
+                        win = win.top;
+                    }
+                    var currentHref=win.location.href;
+                    win.location.href= XMLHttpRequest.getResponseHeader("CONTEXTPATH")+"?url="+currentHref;
+                }
+            }
+    });
+    //退出登录
+    function logout()
+    {
+        $.ajax({
+            url:"usersController/loginOut",
+            dataType:"json",
+            type:"post",
+            success:function (data)
+            {
+                if(data)
+                    window.location.href=window.location.href;
+            }
+        });
+    }
+    //取消收藏
+    function cancel_scenicSpotCollect(obj)
+    {
+        var scenicSpotCollectId=$(obj).attr("data-scenicSpotCollectId");
+        $.ajax({
+            url:"scenicspotCollectController/delete_scenicSpotCollectByscenicSpotCollectId",
+            dataType:"json",
+            type:"post",
+            data:{scenicSpotCollectId:scenicSpotCollectId},
+            success:function(data)
+            {
+                if(data)
+                   find_scenicSpotCollectByuserIds();
+            }
+        });
+    }
+    //隐藏图片
+    function conceal_photo(obj)
+    {
+        var text=$(obj).children("span").text();
+        if(text=="收起")
+        {
+            $(obj).children("span").text("展开更多");
+            $(obj).children("i").attr("class","arr-down");
+            $(obj).parent().parent().next().addClass("hide");
+            $(obj).parent().parent().parent().children("ul").addClass("hide");
+        }
+        else
+        {
+            $(obj).children("span").text("收起");
+            $(obj).children("i").attr("class","arr-up");
+            $(obj).parent().parent().next().removeClass("hide");
+            $(obj).parent().parent().parent().children("ul").removeClass("hide");
+        }
+    }
+</script>
+</body>
+</html>

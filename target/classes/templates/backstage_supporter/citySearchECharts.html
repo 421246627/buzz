@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="/js/echarts.js"></script>
+    <script src="/js/jquery-1.11.0.min.js"></script>
+</head>
+<body style="height: 100%; margin: 0">
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<div id="main" style="height: 100%"></div>
+<script type="text/javascript">
+
+    var rs;
+
+    //获取data
+    $.ajax({
+       url:'/cityController/queryCitySearchNumber',
+        type:'post',
+        async:false,
+        dataType:'JSON',
+        success:function(data){
+            rs=data;
+        }
+    });
+
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    option = {
+        tooltip : {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        legend: {
+            // orient: 'vertical',
+            // top: 'middle',
+            bottom: 10,
+            left: 'center',
+        },
+        series : [
+            {
+                name:'搜索次数百分比',
+                type: 'pie',
+                radius : '70%',
+                center: ['50%', '50%'],
+                selectedMode: 'single',
+                data:rs,
+                itemStyle: {
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                }
+            }
+        ],
+        toolbox:{ //保存图片属性配置
+            feature:{
+                saveAsImage:{
+                    type:'png',
+                    name:'城市搜索次数',
+                    backgroundColor:'auto',
+                    show:true,
+                    title:'保存为图片',
+                    backgroundColor:'white',
+                    iconStyle:{ //下载图标样式
+                        textPosition:'left',
+                    }
+                }
+            },
+            right:25,
+            top:10
+        }
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+</body>
+</html>
